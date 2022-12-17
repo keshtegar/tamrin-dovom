@@ -1,15 +1,17 @@
 #exit
-sum = 0
-i = 0
-
-while True:
-    n = input("please enter a number: ")
+a=[]
+x=1
+while x==1:
+    n=int(input("please enter a number: "))
+    a.append(n)
     
-    if n == 'Exit':
-        print("sum of numbers= ", sum)
+    i=input(" را بزنیدy  را یزنید در غیر اینص.رت exit  اگر میخواهید خارج ش.ید ")
+    if i=="exit":
         break
-    i=float(n)
-    sum = sum + i
+    elif i=="y":
+        x=1
+sum1=sum(a)
+print("sum = ",sum1)
 
 
     
