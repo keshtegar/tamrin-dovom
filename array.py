@@ -1,8 +1,10 @@
 #array
 import random
 n=int(input( "لطفا طول ارایه را وارد کنید : " ))
-start=int(input("لطفا ابتدای یازه را وارد کنید : "))
-end=int(input("لطفا انتهای بازه را وارد کنید : "))
+m=[]
 
-numbers = random.sample(range(start, end), n)
-print(numbers)
+for i in range(n):
+    numbers=random.randint(0,n)
+    m.append(numbers)
+print(m)
+
